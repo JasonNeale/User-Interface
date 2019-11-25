@@ -23,25 +23,31 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -64,3 +70,150 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+a, a:hover, a:visited {
+    text-decoration: none;
+}
+
+.wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 876px;
+}
+
+.wrapper nav {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    margin-top: 40px;
+}
+
+.wrapper nav > a {
+    position: relative;
+    color: lightslategray;
+    margin-right: 4vw;
+    top: 10px;
+    z-index: 10000;
+}
+
+.wrapper nav > a:hover {
+    color: red;
+}
+
+.wrapper nav a:last-child {
+    margin-right: 0;
+}
+
+.wrapper nav .logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.landing {
+    position: relative;
+    padding: 60px 0 60px 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #ddd;
+}
+
+.landing-left-col {
+    margin-top: 60px;
+    float:left;
+    width: 50%;
+    text-align: center;
+}
+
+.landing .landing-left-col h1 {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 72px;
+}
+
+.landing-right-col {
+    margin-top: 60px;
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+
+.landing-button {
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid #aaa;
+    margin-top: 20px;
+}
+
+.landing-button:hover {
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #0a0;
+    color: #0a0;
+    font-weight: 500;
+}
+
+.clear {
+    clear: both;
+}
+
+.middle-img {
+    padding: 20px 0 20px 0;
+}
+
+section {
+    margin-top: 20px;
+}
+
+.sec-1-col-1 {
+    width: 50%;
+    float: left;
+}
+
+.sec-1-col-2 {
+    width: 50%;
+    float: right;
+}
+
+#section-3 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.sec-3-col-1 {
+    width: 33%;
+    float: left;
+}
+
+.sec-3-col-2 {
+    width: 33%;
+    float: left;
+    
+}
+
+.sec-3-col-3 {
+    width: 33%;
+    float: right;
+}
+
+#section-4 {
+    padding-bottom: 40px;
+}
+
+address > ul > li {
+    line-height: 1.3;
+}
+
+#li-phone{
+    line-height: 3;
+}
+
+#li-phone{
+    line-height: 3;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 80px;
+}
